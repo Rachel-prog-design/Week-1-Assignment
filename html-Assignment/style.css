@@ -1,8 +1,52 @@
 body {
-    background-color: #f4f6f8;
+    background-color: rgb(180, 221, 221);
     font-family: Arial, sans-serif;
 }
+bout{
+    font-family: 'Times New Roman', Times, serif;
 
+}
+h2 {
+    text-decoration: underline;
+    margin: 20px;
+}
+div{
+    margin-bottom: 20px;
+}
+button {
+/*viibility: hidden; */
+/* display: none; */
+}
+#button:hover {
+    background-color: blue;
+    color:blueviolet;
+    cursor: pointer;
+
+
+}
+#email{
+color: green;
+opacity: 0.9;
+margin: left
+}
+#name{
+    color:aqua;
+    margin: left
+}
+input {
+margin:4px;
+border-color: rgb(13, 240, 62)
+
+}
+
+form { 
+    width: 300px;
+    background-color: DarkGrey;
+    border: radius 15px;
+    padding: 30px;
+    margin: 60px;
+    color: rgb(92, 3, 209)
+}       
 table {
     border-collapse: collapse;
     width: 80%;
