@@ -2,36 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>About Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
- <p>Welcome to My Website</p>
- <nav>
-<a href="index.html" title="Go to home page"> Home</a>
-<a href="about.html" title="Go to about page"> About</a>
-<a href="table.html" title="Go to table page"> Table</a>
-<a href="form.html" title="Go back form">Form</a>
-<a href="tips.html" title="Go to Tips page">Tips To Register</a>
- </nav> 
- 
-<h1>Welcome to My Website</h1>
 
-<p>
-    Hello and welcome! This website is created to share useful information,
-    tips, and resources for students. You can explore different pages to learn
-    about registration steps, student activities, tables, forms, and more.
-</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<h2>Quick Links</h2>
-<ul>
-    <li><a href="about.html">About Page</a></li>
-    <li><a href="table.html">Student Records Table</a></li>
-    <li><a href="form.html">Registration Form</a></li>
-    <li><a href="tips-to-register.html">Tips to Register</a></li>
-</ul>
+<!-- PAGE TITLE -->
+<h1 class="text-3xl font-bold text-center mt-8">
+    Welcome to My HTML Assignment
+</h1>
 
-<p>Thank you for visiting and enjoy browsing!</p>
-  
+<!-- NAVIGATION -->
+<nav class="flex justify-center gap-6 mt-6 bg-white py-4 shadow-md">
+    <a href="index.html" class="hover:text-blue-600 font-medium">Home</a>
+    <a href="about.html" class="hover:text-blue-600 font-medium">About</a>
+    <a href="table.html" class="hover:text-blue-600 font-medium">Table</a>
+    <a href="form.html" class="hover:text-blue-600 font-medium">Form</a>
+    <a href="tips.html" class="hover:text-blue-600 font-medium">Tips To Register</a>
+</nav>
+
+<hr class="my-8">
+
+<!-- CONTENT -->
+<div class="max-w-3xl mx-auto px-6">
+
+    <!-- ORDERED LIST -->
+    <h2 class="text-xl font-semibold mb-3">
+        Ordered List: Steps to Register
+    </h2>
+
+    <ol class="list-decimal list-inside space-y-2 mb-8">
+        <li>Open the website</li>
+        <li>Fill the registration form</li>
+        <li>Submit your details</li>
+        <li>Receive confirmation</li>
+    </ol>
+
+    <!-- UNORDERED LIST -->
+    <h2 class="text-xl font-semibold mb-3">
+        Unordered List: Student Activities
+    </h2>
+
+    <ul class="list-disc list-inside space-y-2">
+        <li>Studying</li>
+        <li>Group discussions</li>
+        <li>Sports</li>
+        <li>Community service</li>
+    </ul>
+
+</div>
+
 </body>
 </html>
