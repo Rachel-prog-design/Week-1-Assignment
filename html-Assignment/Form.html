@@ -1,46 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Form</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<nav>
-<h1>Student Registration Form</h1>
 
-<a href="index.html" title="Go to home page"> Home</a>
-<a href="about.html" title="Go to about page"> About</a>
-<a href="table.html" title="Go to table page"> Table</a>
-<a href="form.html" title="Go back form">Form</a>
-<a href="tips.html" title="Go to Tips page">Tips To Register</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+<!-- NAVIGATION -->
+<nav class="bg-white shadow-md py-4">
+    <h1 class="text-2xl font-bold text-center mb-4">
+        Student Registration Form
+    </h1>
+
+    <div class="flex justify-center gap-6 font-medium">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="table.html" class="hover:text-blue-600">Table</a>
+        <a href="form.html" class="text-blue-600 font-semibold">Form</a>
+        <a href="tips.html" class="hover:text-blue-600">Tips To Register</a>
+    </div>
 </nav>
-<form>
 
-<label for="name">Full Name:</label>
-<input type="text" id="name" name="name"><br><br>
+<!-- FORM -->
+<section class="max-w-md mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+    <form>
 
-<label for="email">Email Address:</label>
-<input type="email" id="email" name="email"><br><br>
+        <!-- NAME -->
+        <label for="name" class="block font-medium mb-1">
+            Full Name:
+        </label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
 
-<p>Gender:</p>
-<label>
-    <input type="radio" name="gender"> Male
-</label>
-<label>
-    <input type="radio" name="gender"> Female
-</label><br><br>
+        <!-- EMAIL -->
+        <label for="email" class="block font-medium mb-1">
+            Email Address:
+        </label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
 
-<p>Skills:</p>
-<label>
-    <input type="checkbox"> HTML
-</label>
-<label>
-    <input type="checkbox"> CSS
-</label><br><br>
+        <!-- GENDER -->
+        <p class="font-medium mb-2">Gender:</p>
+        <div class="flex gap-6 mb-4">
+            <label class="flex items-center gap-2">
+                <input type="radio" name="gender" class="accent-blue-600">
+                Male
+            </label>
+            <label class="flex items-center gap-2">
+                <input type="radio" name="gender" class="accent-blue-600">
+                Female
+            </label>
+        </div>
 
-<input id="button" type="button" value="Register">
+        <!-- SKILLS -->
+        <p class="font-medium mb-2">Skills:</p>
+        <div class="flex gap-6 mb-6">
+            <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-blue-600">
+                HTML
+            </label>
+            <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-blue-600">
+                CSS
+            </label>
+        </div>
 
-</form>
+        <!-- BUTTON -->
+        <input
+            type="button"
+            value="Register"
+            class="w-full bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700 cursor-pointer"
+        >
+
+    </form>
+</section>
 
 </body>
 </html>
