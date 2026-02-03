@@ -1,92 +1,114 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <title> Tables</title>
-    </head>
-    <body> 
-<nav>
-<h1>Student Information Table</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-<a href="index.html" title="Go to home page"> Home</a>
-<a href="about.html" title="Go to about page"> About</a>
-<a href="table.html" title="Go to table page"> Table</a>
-<a href="form.html" title="Go back form">Form</a>
-<a href="tips.html" title="Go to Tips page">Tips To Register</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+<!-- NAVIGATION -->
+<nav class="bg-white shadow-md py-4">
+    <h1 class="text-2xl font-bold text-center mb-4">
+        Student Information Table
+    </h1>
+
+    <div class="flex justify-center gap-6 font-medium">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="table.html" class="hover:text-blue-600">Table</a>
+        <a href="form.html" class="hover:text-blue-600">Form</a>
+        <a href="tips.html" class="hover:text-blue-600">Tips To Register</a>
+    </div>
 </nav>
-<table border ="2">
 
- <caption> Student Records </caption>
-<thead>
-         <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Course</th>
-            <th>Year</th>
-        </tr>
-    </thead>
+<!-- TABLE SECTION -->
+<section class="max-w-5xl mx-auto px-6 mt-10">
 
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Rachel</td>
-            <td>Project Management</td>
-            <td>Year 2</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>John</td>
-            <td>Computer Science</td>
-            <td>Year 1</td>
-        </tr>
-    </tbody>
-</table>
+    <!-- STUDENT RECORDS TABLE -->
+    <table class="w-full border border-gray-300 bg-white rounded-lg overflow-hidden shadow-sm">
+        <caption class="text-lg font-semibold mb-3">
+            Student Records
+        </caption>
 
-<hr>
-<h2>HTML Text Formatting Tags</h2>
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="p-3 text-left">ID</th>
+                <th class="p-3 text-left">Name</th>
+                <th class="p-3 text-left">Course</th>
+                <th class="p-3 text-left">Year</th>
+            </tr>
+        </thead>
 
-<table border="2">
-    <tr>
-        <th>Tag</th>
-        <th>Description</th>
-        <th>Example Output</th>
-    </tr>
+        <tbody>
+            <tr class="border-t">
+                <td class="p-3">1</td>
+                <td class="p-3">Rachel</td>
+                <td class="p-3">Project Management</td>
+                <td class="p-3">Year 2</td>
+            </tr>
+            <tr class="border-t bg-gray-50">
+                <td class="p-3">2</td>
+                <td class="p-3">John</td>
+                <td class="p-3">Computer Science</td>
+                <td class="p-3">Year 1</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <tr>
-        <td>&lt;b&gt;</td>
-        <td>Bold text</td>
-        <td><b>Bold</b></td>
-    </tr>
+    <hr class="my-12">
 
-    <tr>
-        <td>&lt;i&gt;</td>
-        <td>Italic text</td>
-        <td><i>Italic</i></td>
-    </tr>
+    <!-- TEXT FORMATTING TABLE -->
+    <h2 class="text-xl font-semibold mb-4">
+        HTML Text Formatting Tags
+    </h2>
 
-    <tr>
-        <td>&lt;u&gt;</td>
-        <td>Underlined text</td>
-        <td><u>Underline</u></td>
-    </tr>
+    <table class="w-full border border-gray-300 bg-white rounded-lg overflow-hidden shadow-sm">
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="p-3 text-left">Tag</th>
+                <th class="p-3 text-left">Description</th>
+                <th class="p-3 text-left">Example Output</th>
+            </tr>
+        </thead>
 
-    <tr>
-        <td>&lt;strong&gt;</td>
-        <td>Important text</td>
-        <td><strong>Strong</strong></td>
-    </tr>
+        <tbody>
+            <tr class="border-t">
+                <td class="p-3">&lt;b&gt;</td>
+                <td class="p-3">Bold text</td>
+                <td class="p-3 font-bold">Bold</td>
+            </tr>
+            <tr class="border-t bg-gray-50">
+                <td class="p-3">&lt;i&gt;</td>
+                <td class="p-3">Italic text</td>
+                <td class="p-3 italic">Italic</td>
+            </tr>
+            <tr class="border-t">
+                <td class="p-3">&lt;u&gt;</td>
+                <td class="p-3">Underlined text</td>
+                <td class="p-3 underline">Underline</td>
+            </tr>
+            <tr class="border-t bg-gray-50">
+                <td class="p-3">&lt;strong&gt;</td>
+                <td class="p-3">Important text</td>
+                <td class="p-3 font-semibold">Strong</td>
+            </tr>
+            <tr class="border-t">
+                <td class="p-3">&lt;em&gt;</td>
+                <td class="p-3">Emphasized text</td>
+                <td class="p-3 italic">Emphasis</td>
+            </tr>
+            <tr class="border-t bg-gray-50">
+                <td class="p-3">&lt;mark&gt;</td>
+                <td class="p-3">Highlighted text</td>
+                <td class="p-3 bg-yellow-200">Marked</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <tr>
-        <td>&lt;em&gt;</td>
-        <td>Emphasized text</td>
-        <td><em>Emphasis</em></td>
-    </tr>
+</section>
 
-    <tr>
-        <td>&lt;mark&gt;</td>
-        <td>Highlighted text</td>
-        <td><mark>Marked</mark></td>
-    </tr>
-</table>
-
-    </body>
+</body>
 </html>
