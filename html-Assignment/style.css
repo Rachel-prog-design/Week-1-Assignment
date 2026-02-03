@@ -13,10 +13,7 @@ h2 {
 div{
     margin-bottom: 20px;
 }
-button {
-/*viibility: hidden; */
-/* display: none; */
-}
+
 #button:hover {
     background-color: blue;
     color:blueviolet;
